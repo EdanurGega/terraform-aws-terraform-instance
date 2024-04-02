@@ -14,16 +14,16 @@ variable "num_of_instance" {
 
 variable "tag" {
   type = string
-  default = "Docker-Instance"
+  default = "terraform-Instance"
 }
 
 variable "server-name" {
   type = string
-  default = "docker-instance"
+  default = "terraform-instance"
 }
 
-variable "docker-instance-ports" {
+variable "terraform-instance-ports" {
   type = list(number)
-  description = "docker-instance-sec-gr-inbound-rules"
+  description = "terraform-instance-sec-gr-inbound-rules"
   default = [22, 80, 8080]
 }
